@@ -3,7 +3,11 @@
 
 #Libraries
 
+install.packages("readxl")
+install.packages("psych")
+install.packages("ggplot2")
 
+library("readxl")
 library("psych")
 library("ggplot2")
 
@@ -13,13 +17,13 @@ import <- function(){
   attach(dataSheet)
 }
 
-#Broken
+#Broken !!! 1/17/18 WORKING!!! REQUIRES READXL
 
 #Import for Excel
-#import_excel <- function(){
-#excelSheet <- read_excel("C:/Users/Jack/Downloads/PSYC_Data_Summer_2017_Revised.xlsx")
-#attach(excelSheet)
-#}
+importExcel <- function(){
+  excelSheet <- read_excel(file.choose())
+  attach(excelSheet)
+}
 
 #> duration = faithful$eruptions      # the eruption durations 
 #> waiting = faithful$waiting         # the waiting interval 
