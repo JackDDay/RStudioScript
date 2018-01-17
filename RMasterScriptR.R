@@ -1,4 +1,5 @@
 #r cookbook + ggplot
+#1.17.18
 
 #Libraries
 
@@ -23,8 +24,8 @@ import <- function(){
 #> duration = faithful$eruptions      # the eruption durations 
 #> waiting = faithful$waiting         # the waiting interval 
 #> plot(duration, waiting,            # plot the variables 
-#       +   xlab="Eruption duration",        # xâˆ’axis label 
-#       +   ylab="Time waited")              # yâˆ’axis label
+#       +   xlab="Eruption duration",        # xâaxis label 
+#       +   ylab="Time waited")              # yâaxis label
 
 
 ##################################################################################################################
@@ -112,7 +113,7 @@ DepSampTTest <- function(DV, IV){
 ##################################################################################################################
 #-----------------------------------------------------------------------------------------------------------
 #   _        __  ___         _  
-#  /_\    /\ \ \/___\/\   /\/_\  
+#   /_\    /\ \ \/___\/\   /\/_\  
 # //_\\  /  \/ //  //\ \ / //_\\
 #/  _  \/ /\  / \_//  \ V /  _  \
 #\_/ \_/\_\ \/\___/    \_/\_/ \_/
@@ -120,7 +121,7 @@ DepSampTTest <- function(DV, IV){
 
 #Attitudes towards individuals with disabilities significantly changes over time (F (2, 6) = 13.36, p < 0.05).
 #In particular, attitudes were significantly different before training versus one week after training as well before training
-#versus six months after training (both pâ€™s < 0.05). However, attitudes were not different between one week after training and
+#versus six months after training (both pâs < 0.05). However, attitudes were not different between one week after training and
 #six months after training (p = 0.06).
 
 OneWayBetweenANOVA <- function(DV, IV){
